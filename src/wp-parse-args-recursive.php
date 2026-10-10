@@ -18,7 +18,7 @@
  *
  * NOTE: you can see in the panel that it generates a temp file, but it doesn’t do anything else.
  */
-if ( ! function_exists( 'wp_parse_args_recursive'   ) ) {
+if ( ! function_exists( 'wp_parse_args_recursive' ) ) {
 	/**
 	 * Like wp_parse_args but supports recursivity
 	 * By default converts the returned type based on the $args and $defaults
@@ -47,7 +47,8 @@ if ( ! function_exists( 'wp_parse_args_recursive'   ) ) {
 			foreach ( $parsed_args as $key => $value ) {
 				if ( is_int( $key ) && ! $preserve_integer_keys ) {
 					$output[] = $value;
-				} elseif ( isset( $output[ $key ] )
+				} elseif (
+					isset( $output[ $key ] )
 					&& ( is_array( $output[ $key ] ) || is_object( $output[ $key ] ) )
 					&& ( is_array( $value ) || is_object( $value ) )
 				) {

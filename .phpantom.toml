@@ -6,8 +6,7 @@
 # Full reference: https://phpantom-dev.github.io/phpantom_lsp/configuration/
 
 [phpcs]
-command = "/Users/sergio/.config/composer/vendor/bin/phpcs"
 standard = "WordPress"
 
 [formatting]
-phpcbf = "/Users/sergio/.config/composer/vendor/bin/phpcbf"
+phpcbf = "phpcbf"
