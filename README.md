@@ -1,5 +1,7 @@
 # phpantom-testing
 
+> [!NOTE]
+> It works correctly now.
 
 ## Current Zed Settings
 
@@ -19,28 +21,28 @@
     "default_model": {
       "provider": "********", // Edited for privacy
       "model": "********", // Edited for privacy
-      "enable_thinking": true,
+      "enable_thinking": true
     },
     "favorite_models": [],
-    "model_parameters": [],
+    "model_parameters": []
   },
   "file_types": {
-    "Ghostty": ["**/ghostty/config"],
+    "Ghostty": ["**/ghostty/config"]
   },
   "agent_servers": {
     "oc": {
       "favorite_config_option_values": {
-        "model": ["********"], // Edited for privacy
+        "model": ["********"] // Edited for privacy
       },
       "default_config_options": {
         "effort": "max",
         "mode": "plan",
-        "model": "********", // Edited for privacy
+        "model": "********" // Edited for privacy
       },
       "type": "custom",
       "command": "/Users/sergio/.opencode/bin/opencode",
-      "args": ["acp"],
-    },
+      "args": ["acp"]
+    }
   },
   "wrap_guides": [80, 100, 120],
   // "buffer_font_features": {
@@ -65,15 +67,15 @@
   "title_bar": {
     "show_user_menu": false,
     "show_sign_in": false,
-    "show_branch_status_icon": true,
+    "show_branch_status_icon": true
   },
   "status_bar": {
-    "line_endings_button": true,
+    "line_endings_button": true
   },
   "theme": {
     "mode": "system",
     "light": "One Dark",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
   "redact_private_values": true,
   "cli_default_open_behavior": "new_window",
@@ -81,16 +83,16 @@
   "close_on_file_delete": true,
   "icon_theme": "Material Icon Theme",
   "collaboration_panel": {
-    "button": false,
+    "button": false
   },
   "edit_predictions": {
     "provider": "none", // none, remove icon.
-    "allow_data_collection": "no",
+    "allow_data_collection": "no"
   },
   "format_on_save": "off",
   "languages": {
     "Swift": {
-      "language_servers": ["sourcekit-lsp", "package-swift-lsp"],
+      "language_servers": ["sourcekit-lsp", "package-swift-lsp"]
     },
     "PHP": {
       "language_servers": [
@@ -98,21 +100,21 @@
         "!intelephense",
         "!phpactor",
         "!phptools",
-        "...",
+        "..."
       ],
       "formatter": "language_server",
-      "format_on_save": "on",
+      "format_on_save": "on"
     },
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
-      },
+        "source.fixAll.eslint": true
+      }
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
-      },
-    },
+        "source.fixAll.eslint": true
+      }
+    }
   },
   "lsp": {
     "json-language-server": {
@@ -121,36 +123,36 @@
           "schemas": [
             {
               "fileMatch": ["composer.json"],
-              "url": "https://getcomposer.org/schema.json",
-            },
-          ],
-        },
-      },
+              "url": "https://getcomposer.org/schema.json"
+            }
+          ]
+        }
+      }
     },
     "vtsls": {
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
+            "enabled": "always"
+          }
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always",
-          },
-        },
-      },
+            "enabled": "always"
+          }
+        }
+      }
     },
     "eslint": {
       "settings": {
-        "useFlatConfig": true,
-      },
+        "useFlatConfig": true
+      }
     },
     "tailwindcss-language-server": {
       "settings": {
         "includeLanguages": {
           "php": "html",
-          "blade": "html",
+          "blade": "html"
         },
         "experimental": {
           "classRegex": [
@@ -168,23 +170,23 @@
             "\\.classList\\.toggle\\(['\"]([^'\"]*)['\"]",
             "\\.classList\\.contains\\(['\"]([^'\"]*)['\"]",
             "\\.classList\\.replace\\(\\s*['\"]([^'\"]*)['\"]",
-            "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]",
-          ],
-        },
-      },
-    },
+            "\\.classList\\.replace\\([^,)]+,\\s*['\"]([^'\"]*)['\"]"
+          ]
+        }
+      }
+    }
   },
   "minimap": {
-    "show": "always",
+    "show": "always"
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false,
+    "metrics": false
   },
   "terminal": {
     "shell": "system",
-    "working_directory": "current_file_directory",
-  },
+    "working_directory": "current_file_directory"
+  }
 }
 ```
 
@@ -192,14 +194,13 @@
 
 ```json
 {
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
-	"require-dev": {
-		"kallookoo/phpcs-rules": "^1.0"
-	}
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "kallookoo/phpcs-rules": "^1.0"
+  }
 }
-
 ```
